@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.7.3rc1 on win32)" generated="20220622 21:29:14.561" rpa="false" schemaversion="3">
+<suite id="s1" name="Swaglab2" source="E:\driverdataTestRobot\Steps\swaglab2.robot">
+<test id="s1-t1" name="Login with valid username and valid password using CSV file" line="22">
+<kw name="Open Browser" library="SeleniumLibrary" type="SETUP">
+<arg>${base_url}</arg>
+<arg>${base_type}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220622 21:29:14.892" level="INFO">Opening browser 'gc' to base url 'https://www.saucedemo.com/'.</msg>
+<status status="PASS" starttime="20220622 21:29:14.892" endtime="20220622 21:29:18.935"/>
+</kw>
+<kw name="I login with valid username and valid password">
+<arg>standard_user</arg>
+<arg>secret_sauce</arg>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220622 21:29:18.938" endtime="20220622 21:29:19.147"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_username}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220622 21:29:19.149" level="INFO">Typing text 'standard_user' into text field '//input[@id="user-name"]'.</msg>
+<status status="PASS" starttime="20220622 21:29:19.147" endtime="20220622 21:29:19.547"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_password}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220622 21:29:19.549" level="INFO">Typing text 'secret_sauce' into text field '//input[@id="password"]'.</msg>
+<status status="PASS" starttime="20220622 21:29:19.548" endtime="20220622 21:29:19.767"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${login}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220622 21:29:19.768" level="INFO">Clicking element '//input[@id="login-button"]'.</msg>
+<status status="PASS" starttime="20220622 21:29:19.767" endtime="20220622 21:29:19.917"/>
+</kw>
+<status status="PASS" starttime="20220622 21:29:18.936" endtime="20220622 21:29:19.917"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220622 21:29:19.923" endtime="20220622 21:29:22.445"/>
+</kw>
+<status status="PASS" starttime="20220622 21:29:14.885" endtime="20220622 21:29:22.445"/>
+</test>
+<test id="s1-t2" name="Login with valid username and valid password using CSV file" line="22">
+<kw name="Open Browser" library="SeleniumLibrary" type="SETUP">
+<arg>${base_url}</arg>
+<arg>${base_type}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220622 21:29:22.452" level="INFO">Opening browser 'gc' to base url 'https://www.saucedemo.com/'.</msg>
+<status status="PASS" starttime="20220622 21:29:22.451" endtime="20220622 21:29:26.243"/>
+</kw>
+<kw name="I login with valid username and valid password">
+<arg>locked_out_user</arg>
+<arg>secret_sauce</arg>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220622 21:29:26.245" endtime="20220622 21:29:26.475"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_username}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220622 21:29:26.477" level="INFO">Typing text 'locked_out_user' into text field '//input[@id="user-name"]'.</msg>
+<status status="PASS" starttime="20220622 21:29:26.475" endtime="20220622 21:29:26.975"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_password}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220622 21:29:26.976" level="INFO">Typing text 'secret_sauce' into text field '//input[@id="password"]'.</msg>
+<status status="PASS" starttime="20220622 21:29:26.975" endtime="20220622 21:29:27.152"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${login}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220622 21:29:27.153" level="INFO">Clicking element '//input[@id="login-button"]'.</msg>
+<status status="PASS" starttime="20220622 21:29:27.153" endtime="20220622 21:29:27.239"/>
+</kw>
+<status status="PASS" starttime="20220622 21:29:26.244" endtime="20220622 21:29:27.239"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220622 21:29:27.240" endtime="20220622 21:29:29.562"/>
+</kw>
+<status status="PASS" starttime="20220622 21:29:22.448" endtime="20220622 21:29:29.563"/>
+</test>
+<test id="s1-t3" name="Login with valid username and valid password using CSV file" line="22">
+<kw name="Open Browser" library="SeleniumLibrary" type="SETUP">
+<arg>${base_url}</arg>
+<arg>${base_type}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220622 21:29:29.572" level="INFO">Opening browser 'gc' to base url 'https://www.saucedemo.com/'.</msg>
+<status status="PASS" starttime="20220622 21:29:29.571" endtime="20220622 21:29:33.806"/>
+</kw>
+<kw name="I login with valid username and valid password">
+<arg>problem_user</arg>
+<arg>secret_sauce</arg>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220622 21:29:33.808" endtime="20220622 21:29:34.026"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_username}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220622 21:29:34.027" level="INFO">Typing text 'problem_user' into text field '//input[@id="user-name"]'.</msg>
+<status status="PASS" starttime="20220622 21:29:34.026" endtime="20220622 21:29:34.346"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_password}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220622 21:29:34.347" level="INFO">Typing text 'secret_sauce' into text field '//input[@id="password"]'.</msg>
+<status status="PASS" starttime="20220622 21:29:34.346" endtime="20220622 21:29:34.468"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${login}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220622 21:29:34.470" level="INFO">Clicking element '//input[@id="login-button"]'.</msg>
+<status status="PASS" starttime="20220622 21:29:34.469" endtime="20220622 21:29:34.605"/>
+</kw>
+<status status="PASS" starttime="20220622 21:29:33.807" endtime="20220622 21:29:34.605"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220622 21:29:34.606" endtime="20220622 21:29:37.381"/>
+</kw>
+<status status="PASS" starttime="20220622 21:29:29.568" endtime="20220622 21:29:37.382"/>
+</test>
+<test id="s1-t4" name="Login with valid username and valid password using CSV file" line="22">
+<kw name="Open Browser" library="SeleniumLibrary" type="SETUP">
+<arg>${base_url}</arg>
+<arg>${base_type}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220622 21:29:37.389" level="INFO">Opening browser 'gc' to base url 'https://www.saucedemo.com/'.</msg>
+<status status="PASS" starttime="20220622 21:29:37.388" endtime="20220622 21:29:41.166"/>
+</kw>
+<kw name="I login with valid username and valid password">
+<arg>performance_glitch_user</arg>
+<arg>secret_sauce</arg>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220622 21:29:41.169" endtime="20220622 21:29:41.407"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_username}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220622 21:29:41.409" level="INFO">Typing text 'performance_glitch_user' into text field '//input[@id="user-name"]'.</msg>
+<status status="PASS" starttime="20220622 21:29:41.408" endtime="20220622 21:29:41.832"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_password}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220622 21:29:41.833" level="INFO">Typing text 'secret_sauce' into text field '//input[@id="password"]'.</msg>
+<status status="PASS" starttime="20220622 21:29:41.832" endtime="20220622 21:29:42.079"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${login}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220622 21:29:42.080" level="INFO">Clicking element '//input[@id="login-button"]'.</msg>
+<status status="PASS" starttime="20220622 21:29:42.079" endtime="20220622 21:29:47.393"/>
+</kw>
+<status status="PASS" starttime="20220622 21:29:41.168" endtime="20220622 21:29:47.393"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220622 21:29:47.394" endtime="20220622 21:29:49.959"/>
+</kw>
+<status status="PASS" starttime="20220622 21:29:37.385" endtime="20220622 21:29:49.962"/>
+</test>
+<status status="PASS" starttime="20220622 21:29:14.563" endtime="20220622 21:29:49.965"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="4" fail="0" skip="0" id="s1" name="Swaglab2">Swaglab2</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20220622 21:29:22.447" level="WARN">Multiple tests with name 'Login with valid username and valid password using CSV file' executed in suite 'Swaglab2'.</msg>
+<msg timestamp="20220622 21:29:29.566" level="WARN">Multiple tests with name 'Login with valid username and valid password using CSV file' executed in suite 'Swaglab2'.</msg>
+<msg timestamp="20220622 21:29:37.384" level="WARN">Multiple tests with name 'Login with valid username and valid password using CSV file' executed in suite 'Swaglab2'.</msg>
+</errors>
+</robot>

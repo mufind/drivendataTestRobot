@@ -1,0 +1,3 @@
+input_username: //input[@id="user-name"]               
+input_password: //input[@id="password"]        
+login: //input[@id="login-button"]  
